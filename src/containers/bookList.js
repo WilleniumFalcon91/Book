@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class BookList extends Component {
-
     renderList() {
         return this.props.books.map((book) => {
             return (
@@ -10,7 +9,7 @@ class BookList extends Component {
             );
         });
     }
-    render () {
+    render() {
         return (
             <ul className="list-group col-sm-4">
                 {this.renderList()}
@@ -22,7 +21,7 @@ class BookList extends Component {
 function mapStateToProps(state) {
     return {
         books: state.books
-    }
+    };
 }
 
 export default connect(mapStateToProps)(BookList);
