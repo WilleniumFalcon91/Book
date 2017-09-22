@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import BookList from "./containers/bookList";
+import BookDetail from './containers/bookDetail';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
           <h2>Book List</h2>
         </div>
         <BookList />
+        <BookDetail />
       </div>
     );
   }
